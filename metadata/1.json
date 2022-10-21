@@ -1,7 +1,7 @@
 {
   "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.",
   "external_url": "https://openseacreatures.io/3",
-  "image": "https://pacy-metadata-test.s3.ap-northeast-1.amazonaws.com/images/1.svg",
+  "animation_url": "https://pacy-metadata-test.s3.ap-northeast-1.amazonaws.com/images/1.html",
   "name": "Dave Starbelly",
   "attributes": [
     {
