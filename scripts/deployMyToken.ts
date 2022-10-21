@@ -16,8 +16,8 @@ async function main() {
 
   // We get the contract to deploy
   const signer = kmsSigner();
-  const Greeter = await ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.connect(signer).deploy("Hello, Hardhat!");
+  const Greeter = await ethers.getContractFactory("MyToken");
+  const greeter = await Greeter.connect(signer).deploy();
 
   await greeter.deployed();
 

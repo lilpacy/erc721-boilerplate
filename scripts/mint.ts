@@ -1,17 +1,21 @@
 import * as ethers from "ethers";
 import { kmsSigner } from "../common";
-const artifacts = require("../artifacts/contracts/Greeter.sol/Greeter.json");
+
+const artifacts = require("../artifacts/contracts/MyToken.sol/MyToken721.json");
 
 const main = async () => {
   const signer = kmsSigner();
   const contract = new ethers.Contract(
-    "0xa3216C373E49A703c6a639562814C94958b9CA9B",
+    "0x1a00e76fbed93287CaDBC0e355AC415bd102DEd4",
     artifacts.abi,
     signer
   );
 
-  const res = await contract.setGreeting("Ohayo~"); // gasLimit is necessary
-  console.log("greet result:", res);
+  const res = await contract.mint(
+    "0xD75F45a1922869fEE15f87EC5451772c087347D9",
+    1
+  );
+  console.log("result:", res);
 };
 
 main()

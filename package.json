@@ -17,7 +17,6 @@
     "verify:mumbai": "npx hardhat verify --contract contracts/MyERC1155.sol:MyERC1155 0xE2BcA3f8784Ba89749d812ce38f275871c1d55AD 'ipfs://QmdhcMjEELiEX1PqcUwAi4sQSJV6DExw27vRgfeN6hZasA' 'MyERC1155' 'NFT' --network mumbai"
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --cache --fix",
     "**/*.{sol,ts,js,json,md,yml}": [
       "prettier --write"
     ]
